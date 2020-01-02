@@ -3,22 +3,11 @@ import React from "react";
 const Generate = () => {
 // button genetare random number on click event.
 
-  function btnClick(x, y) {
-
- // connect the btnClick result to the view.
-
- 	
-
-
- // Create a random number
+  var btnClick = function(x) {
 
   	x = Math.ceil(Math.ceil(Math.random()) / Math.random());
     console.log(x);
     }
-  	
-
-
-
 
 	return (
 		<div className="gen-box">

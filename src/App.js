@@ -7,7 +7,11 @@ import View from "./components/view/view";
 
 class Generator extends React.Component {
   
-  render() {
+  
+  render(
+
+
+  	) {
   return (
     <div className="container">
     <Instructions />
