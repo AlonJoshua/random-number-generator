@@ -1,19 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Instructions from "./components/instructions/instructions"
+import "./App.css";
+import Instructions from "./components/instructions/instructions";
+import Generate from "./components/button/button";
+import View from "./components/view/view";
 
 class Generator extends React.Component {
-
+  
   render() {
   return (
-    <div className="App">
-    <div className="gen-button">
+    <div className="container">
     <Instructions />
-    <button type="button">generate</button>
-      </div>
-      <div className="random-number"> 
-      <p>0</p>
-      </div>
+    <Generate />
+    <View />
     </div>
     );
   }
