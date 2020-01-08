@@ -6,17 +6,18 @@ import Generate from "./components/button/button";
 import View from "./components/view/view";
 
 class Generator extends React.Component {
-  
-  
-  render(
+  	constructor () {
+  		super()
+  		this.state = { onView: '1' }
+  	}
 
-
-  	) {
+  render() {
+  	const { show } = this.state.onView;
   return (
     <div className="container">
     <Instructions />
     <Generate />
-    <View />
+    <View show={show}/>
     </div>
     );
   }
