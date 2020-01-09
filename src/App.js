@@ -5,19 +5,25 @@ import Instructions from "./components/instructions/instructions";
 import Generate from "./components/button/button";
 import View from "./components/view/view";
 
-class Generator extends React.Component {
+export class Generator extends React.Component {
   	constructor () {
   		super()
-  		this.state = { onView: '1' }
+  		this.state = { 
+        onView: '0' 
+      }  
   	}
+      btnClick() {
+      var x = Math.ceil(Math.ceil(Math.random()) / Math.random());
+      console.log(x);
+     }
 
   render() {
-  	const { show } = this.state.onView;
+      
   return (
     <div className="container">
     <Instructions />
-    <Generate />
-    <View show={show}/>
+    <Generate currentClick={this.btnClick}/>
+    <View show={this.state.onView}/>
     </div>
     );
   }
