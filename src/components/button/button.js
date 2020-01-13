@@ -5,6 +5,10 @@ class Generate extends React.Component {
   		super(props)
   		}
 
+  		handleClick = () => {
+  			this.props.currentClick();
+  		}
+
   	render() {
 
 	return (
@@ -12,7 +16,7 @@ class Generate extends React.Component {
 		<button 
 		type="button" 
 		className="gen-btn" 
-		onClick={this.props.btnClick}>
+		onClick={this.handleClick}>
 		generate 
 		</button>
 		</div>

@@ -6,15 +6,16 @@ import Generate from "./components/button/button";
 import View from "./components/view/view";
 
 export class Generator extends React.Component {
-  	constructor () {
-  		super()
+  	constructor (props) {
+  		super(props)
   		this.state = { 
         onView: '0' 
       }  
   	}
-      btnClick() {
+
+      btnClick = () => {
       var x = Math.ceil(Math.ceil(Math.random()) / Math.random());
-      console.log(x);
+      this.setState({ onView : x });
      }
 
   render() {
