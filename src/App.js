@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import Instructions from "./components/instructions/instructions";
+import Range from "./components/Range/Range";
 import Generate from "./components/button/button";
 import View from "./components/view/view";
 
@@ -23,6 +24,7 @@ export class Generator extends React.Component {
   return (
     <div className="container">
     <Instructions />
+    <Range />
     <Generate currentClick={this.btnClick}/>
     <View show={this.state.onView}/>
     </div>

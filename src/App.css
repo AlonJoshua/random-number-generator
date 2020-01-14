@@ -20,6 +20,11 @@
   font-size: 1.5em;
 }
 
+.rangeDiv {
+	display: flex;
+	justify-content: center;
+}
+
 .gen-box {
 	display: flex;
 	justify-content: center;
@@ -48,6 +53,6 @@
 	padding: auto 0;
 }
 
-.view p {
+.view h1 {
 	font-size: 4em;
 }
