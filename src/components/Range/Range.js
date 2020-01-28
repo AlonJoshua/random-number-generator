@@ -1,13 +1,20 @@
 import React from "react";
 
-const Range = () => {
-
+class Range extends React.Component {
+	constructor(props) {
+  		super(props)
+  		}
+  		render() {
 	return (
-		<div className="rangeDiv">
-		<input></input>
-		<input></input>
+		<div className="range">
+		<h3>Minimum</h3>
+		<input type="number" value={this.props.minNum}/>
+		<h3>Maximum</h3>
+		<input type="number" value={this.props.maxNum}/>
 		</div>
 		)
+	}
 }
+
 
 export default Range;
