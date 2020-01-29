@@ -4,8 +4,9 @@ const Instructions = () => {
 	
 	return (
 		<div className="Instructions">
-		<p>Click "generate" for a random number.<br /> 
-			Set a Range for minimun & Maximun number value.
+		<p>Set a range for minimun & maximun number value<br />
+		and then click "generate" to receive a random number. 
+			
 		</p>
 		</div>
 		);

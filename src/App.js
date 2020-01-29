@@ -16,20 +16,28 @@ class Generator extends React.Component {
       } 
   	}
 
-    
-
     btnClick = () => {
       const { minNum, maxNum } = this.state;
-      // min = Math.ceil(min);
-      // max = Math.floor(max);
-      // var x = Math.floor(Math.random() * (max - min + 1)) + min;
-      console.log(minNum);
-      // return this.setState({ onView : minNum });
-     };
+      const min = Math.ceil(minNum);
+      const max = Math.floor(maxNum);
+      const x = Math.floor(Math.random() * (max - min + 1)) + min;
+      return this.setState({ onView : x });
+    }
 
-    // var minRangeNumChange = (event) => {
-    //   this.setState({ minNum : event.target.value })
-    // }
+    minRangeInputChange = (event) => {
+      const { minNum, maxNum } = this.state;
+       if (event.target.value > maxNum) {
+         return this.setState({ minNum: maxNum });
+       } else {
+        return this.setState({ minNum: event.target.value });
+      }
+      return console.log(minNum);
+    }
+
+    maxRangeInputChange = (event) => {
+      const { maxNum } = this.state;
+      this.setState({ maxNum: event.target.value });
+    }
 
   render() {
 
@@ -39,8 +47,10 @@ class Generator extends React.Component {
     <Range 
       max={this.state.maxNum} 
       min={this.state.minNum} 
+      minChange={this.minRangeInputChange}
+      maxChange={this.maxRangeInputChange}
       />
-    <Generate currentClick={btnClick}/>
+    <Generate currentClick={this.btnClick}/>
     <View show={this.state.onView}/>
     </div>
     );
