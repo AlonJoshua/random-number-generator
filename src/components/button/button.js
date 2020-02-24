@@ -8,9 +8,7 @@ class Generate extends React.Component {
   		handleClick = () => {
   			this.props.currentClick();
   		}
-
   	render() {
-
 	return (
 		<div className="gen-box">
 		<button 

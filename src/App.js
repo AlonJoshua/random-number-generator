@@ -26,17 +26,30 @@ class Generator extends React.Component {
 
     minRangeInputChange = (event) => {
       const { minNum, maxNum } = this.state;
-       if (event.target.value > maxNum) {
-         return this.setState({ minNum: maxNum });
+      const typeNum = parseInt(event.target.value, 10)
+      let numLength = event.target.value.length;
+       if (typeNum > maxNum) {
+            this.setState({ minNum: maxNum });
+       } else if (numLength > 7) {
+            numLength = numLength - 1
        } else {
-        return this.setState({ minNum: event.target.value });
+            this.setState({ minNum: typeNum });
       }
       return console.log(minNum);
     }
 
     maxRangeInputChange = (event) => {
-      const { maxNum } = this.state;
-      this.setState({ maxNum: event.target.value });
+      const { minNum, maxNum } = this.state;
+      const typeNum = parseInt(event.target.value, 10)
+      let numLength = event.target.value.length;
+       if (typeNum < minNum) {
+          this.setState({ maxNum: minNum});
+      } else if (numLength > 7) {
+          numLength = numLength - 1
+      } else {
+          this.setState({ maxNum: typeNum })
+      }
+      return console.log(maxNum);
     }
 
   render() {

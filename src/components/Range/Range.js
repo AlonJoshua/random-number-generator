@@ -7,16 +7,28 @@ class Range extends React.Component {
   		render() {
 	return (
 		<div className="range">
-			<h3>Minimum</h3>
-				<input type="number" 
-				value={this.props.minNum} 
-				onChange={this.props.minChange} 
+			<div className='min-div'>
+			<h2>Minimum</h2>
+				<input 
+				type="number" 
+				min="0"
+				max="9999999"
+				value={this.props.min} 
+				onChange={this.props.minChange}
+				id="minInput"
 				required/>
-			<h3>Maximum</h3>
-				<input type="number" 
-				value={this.props.maxNum}
+			</div>
+			<div className='max-div'>
+			<h2>Maximum</h2>
+				<input 
+				type="number" 
+				min="1"
+				max="9999999"
+				value={this.props.max}
 				onChange={this.props.maxChange}
+				id="maxInput"
 				required/>
+			</div>
 		</div>
 		)
 	}
