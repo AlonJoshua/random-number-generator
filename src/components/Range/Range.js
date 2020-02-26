@@ -1,10 +1,6 @@
 import React from "react";
 
-class Range extends React.Component {
-	constructor(props) {
-  		super(props)
-  		}
-  		render() {
+const Range = ({ min, max, minChange, maxChange }) => {
 	return (
 		<div className="range">
 			<div className='min-div'>
@@ -13,8 +9,8 @@ class Range extends React.Component {
 				type="number" 
 				min="0"
 				max="9999999"
-				value={this.props.min} 
-				onChange={this.props.minChange}
+				value={min} 
+				onChange={minChange}
 				id="minInput"
 				required/>
 			</div>
@@ -24,15 +20,13 @@ class Range extends React.Component {
 				type="number" 
 				min="1"
 				max="9999999"
-				value={this.props.max}
-				onChange={this.props.maxChange}
+				value={max}
+				onChange={maxChange}
 				id="maxInput"
 				required/>
 			</div>
 		</div>
-		)
-	}
+		);
 }
-
 
 export default Range;

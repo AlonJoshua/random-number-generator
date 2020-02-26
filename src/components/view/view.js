@@ -1,10 +1,9 @@
 import React from "react";
 
-const View = ({ show }) => {
-	
+const View = ({ showNum }) => {
 	return (
 		<div className="view">
-		<h1>{show}</h1>
+		<h1>{showNum}</h1>
 		</div>
 		);
 }

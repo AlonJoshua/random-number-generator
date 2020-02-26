@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./App.css";
 import Instructions from "./components/instructions/instructions";
 import Range from "./components/Range/Range";
@@ -9,9 +8,9 @@ import View from "./components/view/view";
 class Generator extends React.Component {
   	constructor (props) {
   		super(props)
-  		this.state = { 
+  		this.state = {
         onView: '0',
-        minNum: 0 ,
+        minNum: 0,
         maxNum: 100
       } 
   	}
@@ -25,7 +24,7 @@ class Generator extends React.Component {
     }
 
     minRangeInputChange = (event) => {
-      const { minNum, maxNum } = this.state;
+      const { maxNum } = this.state;
       const typeNum = parseInt(event.target.value, 10)
       let numLength = event.target.value.length;
        if (typeNum > maxNum) {
@@ -35,11 +34,10 @@ class Generator extends React.Component {
        } else {
             this.setState({ minNum: typeNum });
       }
-      return console.log(minNum);
     }
 
     maxRangeInputChange = (event) => {
-      const { minNum, maxNum } = this.state;
+      const { minNum } = this.state;
       const typeNum = parseInt(event.target.value, 10)
       let numLength = event.target.value.length;
        if (typeNum < minNum) {
@@ -49,11 +47,9 @@ class Generator extends React.Component {
       } else {
           this.setState({ maxNum: typeNum })
       }
-      return console.log(maxNum);
     }
 
   render() {
-
   return (
     <div className="container">
     <Instructions />
@@ -64,7 +60,7 @@ class Generator extends React.Component {
       maxChange={this.maxRangeInputChange}
       />
     <Generate currentClick={this.btnClick}/>
-    <View show={this.state.onView}/>
+    <View showNum={this.state.onView}/>
     </div>
     );
   }

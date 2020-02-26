@@ -1,25 +1,16 @@
 import React from "react";
 
-class Generate extends React.Component {
-	constructor(props) {
-  		super(props)
-  		}
-
-  		handleClick = () => {
-  			this.props.currentClick();
-  		}
-  	render() {
+const Generate = ({ currentClick }) => {
 	return (
 		<div className="gen-box">
 		<button 
 		type="button" 
 		className="gen-btn" 
-		onClick={this.handleClick}>
+		onClick={currentClick}>
 		generate 
 		</button>
 		</div>
 		);
-	}
 }
 
 export default Generate;
