@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/num-gen/static/css/main.af84b316.chunk.css",
-    "main.js": "/num-gen/static/js/main.6969f743.chunk.js",
-    "main.js.map": "/num-gen/static/js/main.6969f743.chunk.js.map",
-    "runtime-main.js": "/num-gen/static/js/runtime-main.c8341f9a.js",
-    "runtime-main.js.map": "/num-gen/static/js/runtime-main.c8341f9a.js.map",
-    "static/js/2.961e2f09.chunk.js": "/num-gen/static/js/2.961e2f09.chunk.js",
-    "static/js/2.961e2f09.chunk.js.map": "/num-gen/static/js/2.961e2f09.chunk.js.map",
-    "index.html": "/num-gen/index.html",
-    "precache-manifest.ed73df92fd5af3257c6bd0475b5f49e6.js": "/num-gen/precache-manifest.ed73df92fd5af3257c6bd0475b5f49e6.js",
-    "service-worker.js": "/num-gen/service-worker.js",
-    "static/css/main.af84b316.chunk.css.map": "/num-gen/static/css/main.af84b316.chunk.css.map",
-    "static/js/2.961e2f09.chunk.js.LICENSE": "/num-gen/static/js/2.961e2f09.chunk.js.LICENSE"
+    "main.css": "/random-number-generator/static/css/main.404becff.chunk.css",
+    "main.js": "/random-number-generator/static/js/main.4349b023.chunk.js",
+    "main.js.map": "/random-number-generator/static/js/main.4349b023.chunk.js.map",
+    "runtime-main.js": "/random-number-generator/static/js/runtime-main.f4e28b4a.js",
+    "runtime-main.js.map": "/random-number-generator/static/js/runtime-main.f4e28b4a.js.map",
+    "static/js/2.185c445f.chunk.js": "/random-number-generator/static/js/2.185c445f.chunk.js",
+    "static/js/2.185c445f.chunk.js.map": "/random-number-generator/static/js/2.185c445f.chunk.js.map",
+    "index.html": "/random-number-generator/index.html",
+    "precache-manifest.db702cd211dfb6e99314cd2f2e9cb9fc.js": "/random-number-generator/precache-manifest.db702cd211dfb6e99314cd2f2e9cb9fc.js",
+    "service-worker.js": "/random-number-generator/service-worker.js",
+    "static/css/main.404becff.chunk.css.map": "/random-number-generator/static/css/main.404becff.chunk.css.map",
+    "static/js/2.185c445f.chunk.js.LICENSE": "/random-number-generator/static/js/2.185c445f.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8341f9a.js",
-    "static/js/2.961e2f09.chunk.js",
-    "static/css/main.af84b316.chunk.css",
-    "static/js/main.6969f743.chunk.js"
+    "static/js/runtime-main.f4e28b4a.js",
+    "static/js/2.185c445f.chunk.js",
+    "static/css/main.404becff.chunk.css",
+    "static/js/main.4349b023.chunk.js"
   ]
 }
